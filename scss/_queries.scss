@@ -1,0 +1,152 @@
+@keyframes showBackGround {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100vw);
+	}
+}
+
+@keyframes hideBackGround {
+	from {
+		transform: translateX(-100vw);
+	}
+	to {
+		transform: translateX(-200vw);
+	}
+}
+
+@media (max-width: 1025px) {
+	.nav {
+		&.light {
+			.nav-content {
+				.nav-right {
+					.nav-mobile {
+						i {
+							color: #222;
+						}
+					}
+				}
+			}
+		}
+		.nav-content {
+			.nav-right {
+				.nav-links {
+					display: none;
+				}
+				.nav-mobile {
+					height: 100%;
+					display: flex;
+					align-items: center;
+					font-size: 1.5rem;
+					.nav-mobile-links {
+						position: absolute;
+						top: 100%;
+						left: 50%;
+						transform: translateX(-50%);
+						display: flex;
+						flex-direction: column;
+						text-align: center;
+						background-color: #fff;
+						width: 100vw;
+						&.showMobileNav {
+							opacity: 1;
+							transition: all 0.4s;
+						}
+						&.hideMobileNav {
+							opacity: 0;
+							transition: all 0.4s;
+						}
+						a {
+							padding: 1rem 0;
+							color: #222;
+							border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 765px) {
+	header.header {
+		.header-text {
+			h3 {
+				font-size: 1rem;
+			}
+			h1 {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	section.latest-products {
+		padding: 5rem 0 0 0;
+		.latest-products-content {
+			.latest-products-heading {
+				h2 {
+					font-size: 1.5rem;
+				}
+				a {
+					font-size: 0.75rem;
+				}
+			}
+			.latest-products-cards {
+				.product-card {
+					margin: 5% 1.5%;
+				}
+			}
+		}
+	}
+
+	section.about-sixteen {
+		.about-sixteen-content {
+			.about-sixteen-heading {
+				justify-content: center;
+				h2 {
+					font-size: 1.5rem;
+				}
+			}
+			.about-sixteen-body {
+				flex-direction: column;
+				text-align: center;
+				div.sixteen-body-left {
+					width: 100%;
+					padding: 0;
+					ul {
+						text-align: left;
+						margin-left: 10%;
+					}
+					button {
+						align-self: center;
+						margin-bottom: 2rem;
+					}
+				}
+				div.sixteen-body-right {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	section.purchase-now {
+		.purchase-now-content {
+			flex-direction: column;
+			.purchase-now-text {
+				text-align: center;
+			}
+			.purchase-now-button {
+				margin-top: 2rem;
+			}
+		}
+	}
+
+	footer.footer {
+		.footer-content {
+			p {
+				font-size: 0.5rem;
+			}
+		}
+	}
+}

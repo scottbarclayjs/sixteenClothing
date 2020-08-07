@@ -1,0 +1,25 @@
+.ourProducts-header {
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(/assets/ourProductsBG.jpg);
+	background-size: cover;
+	background-position: center;
+	.header-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -25%);
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+		h3 {
+			font-size: 1.25rem;
+			color: #f33f3f;
+			letter-spacing: 2px;
+		}
+		h1 {
+			font-size: 3.5rem;
+			letter-spacing: 10px;
+		}
+	}
+}
