@@ -32,7 +32,7 @@ for (let i = 0; i < headerNav.length; i++) {
 		headerBackground[
 			i
 		].style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url(/assets/headerBG${i}.jpg)`;
+		url(/assets/headerBG${i}-min.jpg)`;
 	});
 }
 
