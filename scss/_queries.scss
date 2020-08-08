@@ -71,6 +71,12 @@
 	.header {
 		.header-background {
 			position: relative;
+			&.showBG {
+				animation: none;
+			}
+			&.hideBG {
+				animation: none;
+			}
 		}
 		.header-background:nth-of-type(2),
 		.header-background:nth-of-type(3) {
