@@ -16,7 +16,6 @@ const headerNav = document.querySelectorAll('.nav-circle');
 const headerBackground = document.querySelectorAll('.header-background');
 
 if (document.body.clientWidth > 1025) {
-	console.log('success');
 	for (let i = 0; i < headerNav.length; i++) {
 		headerNav[i].addEventListener('click', () => {
 			for (let j = 0; j < headerNav.length; j++) {

@@ -95,7 +95,10 @@
 }
 
 @media (max-width: 765px) {
-	header.header {
+	header.header,
+	header.aboutUs-header,
+	header.contactUs-header,
+	header.ourProducts-header {
 		.header-text {
 			h3 {
 				font-size: 1rem;
