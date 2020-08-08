@@ -16,6 +16,7 @@ const headerNav = document.querySelectorAll('.nav-circle');
 const headerBackground = document.querySelectorAll('.header-background');
 
 if (document.body.clientWidth > 1025) {
+	console.log('success');
 	for (let i = 0; i < headerNav.length; i++) {
 		headerNav[i].addEventListener('click', () => {
 			for (let j = 0; j < headerNav.length; j++) {
@@ -33,7 +34,7 @@ if (document.body.clientWidth > 1025) {
 			headerBackground[
 				i
 			].style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url(/assets/headerBG${i}-min.jpg)`;
+		url(/assets/headerBG${i}min.jpg)`;
 		});
 	}
 }
