@@ -67,6 +67,25 @@
 			}
 		}
 	}
+
+	.header {
+		.header-background {
+			position: relative;
+		}
+		.header-background:nth-of-type(2),
+		.header-background:nth-of-type(3) {
+			display: none;
+		}
+		.header-text:nth-of-type(2),
+		.header-text:nth-of-type(3) {
+			display: none;
+		}
+		.header-content {
+			.header-navigation {
+				display: none;
+			}
+		}
+	}
 }
 
 @media (max-width: 765px) {
