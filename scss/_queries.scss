@@ -69,7 +69,7 @@
 	}
 
 	.header {
-		.header-background {
+		div.header-background {
 			left: 0;
 			&.showBG {
 				animation: none;
@@ -95,16 +95,26 @@
 }
 
 @media (max-width: 765px) {
+	nav.nav {
+		.nav-content {
+			.nav-left {
+				h2 {
+					font-size: 1.25rem;
+				}
+			}
+		}
+	}
 	header.header,
 	header.aboutUs-header,
 	header.contactUs-header,
 	header.ourProducts-header {
 		.header-text {
+			max-width: 98vw;
 			h3 {
 				font-size: 1rem;
 			}
 			h1 {
-				font-size: 2rem;
+				font-size: 1.75rem;
 			}
 		}
 	}
