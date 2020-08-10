@@ -18,35 +18,39 @@ allProductsBtn.addEventListener('click', (e) => {
 featuredProdBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	for (let product of allProducts) {
-		product.classList.add('hideProduct');
-		product.classList.remove('showProduct');
+		hideProducts(product);
 	}
 	for (let product of featured) {
-		product.classList.remove('hideProduct');
-		product.classList.add('showProduct');
+		showProducts(product);
 	}
 });
 
 flashBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	for (let product of allProducts) {
-		product.classList.add('hideProduct');
-		product.classList.remove('showProduct');
+		hideProducts(product);
 	}
 	for (let product of flash) {
-		product.classList.remove('hideProduct');
-		product.classList.add('showProduct');
+		showProducts(product);
 	}
 });
 
 lastBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	for (let product of allProducts) {
-		product.classList.add('hideProduct');
-		product.classList.remove('showProduct');
+		hideProducts(product);
 	}
 	for (let product of last) {
-		product.classList.remove('hideProduct');
-		product.classList.add('showProduct');
+		showProducts(product);
 	}
 });
+
+function hideProducts(product) {
+	product.classList.add('hideProduct');
+	product.classList.remove('showProduct');
+}
+
+function showProducts(product) {
+	product.classList.remove('hideProduct');
+	product.classList.add('showProduct');
+}
