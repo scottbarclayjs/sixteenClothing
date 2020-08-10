@@ -3,7 +3,7 @@
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
-	window.scrollY >= 675
+	window.scrollY >= 250
 		? nav.classList.add('light')
 		: nav.classList.remove('light');
 });
