@@ -1,10 +1,17 @@
+.aboutUsBody {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),
+		url(/assets/headerBG2min.jpg);
+	background-size: cover;
+}
+
 .aboutUs-header {
-	height: 100vh;
+	height: 500px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url(/assets/aboutUsBGmin.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: 50% 35%;
 	overflow-x: hidden;
+	position: relative;
 	.header-text {
 		position: absolute;
 		top: 50%;
@@ -21,6 +28,198 @@
 		h1 {
 			font-size: 3.5rem;
 			letter-spacing: 10px;
+		}
+	}
+}
+
+.aboutUs-sixteen {
+	background-color: #fff;
+	padding: 5rem 0 0 0;
+	.aboutUs-sixteen-content {
+		width: 1150px;
+		max-width: 90vw;
+		margin: auto;
+		padding-bottom: 5rem;
+		.aboutUs-sixteen-heading {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem 0;
+			border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+			h2 {
+				color: #313131;
+				font-size: 2rem;
+				font-weight: 400;
+			}
+		}
+		.aboutUs-sixteen-body {
+			display: flex;
+			margin-top: 5rem;
+			.sixteen-body-left {
+				display: flex;
+				flex-direction: column;
+				color: #222;
+				width: 50%;
+				padding-right: 2rem;
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+			.sixteen-body-right {
+				width: 50%;
+				h5 {
+					color: #71a0bb;
+					font-size: 1.2rem;
+					font-weight: 400;
+				}
+				p {
+					margin-top: 1.5rem;
+					font-weight: 300;
+					font-size: 1rem;
+					color: #777;
+					&:last-of-type {
+						border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+						padding-bottom: 2rem;
+					}
+				}
+				.sixteen-body-links {
+					display: flex;
+					a {
+						padding: 1rem 1.5rem;
+						font-size: 1.1rem;
+						background-color: #eeeeee;
+						border: none;
+						color: #222;
+						margin: 2rem 0.5rem 0 0;
+						&:hover {
+							background-color: #f33f3f;
+							color: #fff;
+							transition: all 0.4s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.team-members {
+	background-color: #fff;
+	padding: 5rem 0 0 0;
+	.team-members-content {
+		width: 1150px;
+		max-width: 90vw;
+		margin: auto;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+		.team-members-heading {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem 0;
+			border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+			h2 {
+				color: #313131;
+				font-size: 2rem;
+				font-weight: 400;
+			}
+		}
+		.team-members-cards {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 5rem;
+			.members-card {
+				width: 20rem;
+				margin: 1.5%;
+				border: 1px solid rgba(128, 128, 128, 0.205);
+				position: relative;
+				img {
+					width: 100%;
+				}
+				.member-links {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 212px;
+					width: 318px;
+					background-color: #f33f3fc7;
+					opacity: 0;
+					a {
+						color: #222;
+						background-color: #fff;
+						padding: 0.75rem 1.25rem;
+						font-size: 1.1rem;
+						border: none;
+						margin: 0 0.25rem;
+					}
+				}
+				&:hover {
+					.member-links {
+						opacity: 1;
+						transition: all 0.6s;
+						a:hover {
+							color: #f33f3f;
+							transition: all 0.6s;
+						}
+					}
+				}
+				.members-card-body {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					padding: 1rem 2rem;
+					h3 {
+						color: #71a0bb;
+						font-weight: 300;
+						margin: 0.25rem 0;
+						font-size: 1.4rem;
+					}
+					h4 {
+						color: #f33f3f;
+						font-size: 0.9rem;
+					}
+					p {
+						color: #777;
+						text-align: center;
+						margin: 1rem 0;
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1025px) {
+	.aboutUs-sixteen {
+		.aboutUs-sixteen-content {
+			.aboutUs-sixteen-body {
+				display: flex;
+				flex-direction: column;
+				.sixteen-body-left,
+				.sixteen-body-right {
+					width: 100%;
+				}
+				.sixteen-body-left {
+					margin-bottom: 3rem;
+				}
+			}
+		}
+	}
+
+	.team-members {
+		.team-members-content {
+			.team-members-cards {
+				.members-card {
+					margin: 1.5% 1.5% 10% 1.5%;
+				}
+			}
 		}
 	}
 }
